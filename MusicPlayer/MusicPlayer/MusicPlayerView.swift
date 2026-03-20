@@ -101,7 +101,7 @@ struct PlayingMusicview: View {
                 HStack(){
                     Image(systemName: "shuffle")
                         .font(.system(size: 18, weight: .semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.green)
                     Spacer()
                     Image(systemName: "backward.fill")
                         .font(.system(size: 24, weight: .semibold))
@@ -118,6 +118,26 @@ struct PlayingMusicview: View {
                     Image(systemName: "arrow.trianglehead.rectanglepath")
                         .font(.system(size: 18, weight: .semibold))
                         .foregroundStyle(.white)
+                }
+                .padding(.horizontal, 24)
+            
+                //Play  Controls
+                
+                HStack {
+                    HStack{
+                        Image(systemName: "headphones")
+                            .foregroundStyle(.green)
+                        Text("Redmi Buds 6 Lite")
+                            .font(.system(size: 12))
+                            .foregroundStyle(.green)
+                    }
+                    Spacer()
+                    HStack {
+                        Image(systemName: "square.and.arrow.up")
+                            .foregroundStyle(.white)
+                        Image(systemName: "list.bullet.below.rectangle")
+                            .foregroundStyle(.white)
+                    }
                 }
                 .padding(.horizontal, 24)
             }
